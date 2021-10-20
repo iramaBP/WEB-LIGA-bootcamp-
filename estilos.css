@@ -1,0 +1,37 @@
+/* IMAGEN FONDO PRINCIPAL (inicio) */
+.imagenFondo {
+  background-image: url(./imagenes/la-liga-logo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+/* IMAGENES EQUIPOS*/
+.escudo {
+  height: 40px;
+}
+
+/* BARRA ENLACES*/
+.container-fluid {
+  background-color: blue;
+  height: 95px;
+  font-style: italic ; 
+  font-weight: bold;
+  font-size: 25px;
+}
+/* FILTROS */
+.filtros {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 25px;
+  background-color: blueviolet;
+}
+/* FONDO COLOR  PARTIDOS */
+.fondobody {
+  background-color: violet;
+}
+
