@@ -3,7 +3,7 @@ let parti = partidos.matches;
 let equipos = [];
 // RECORRIENDO EL ARRAY PARTIDOS //
 for (let i = 0; i < parti.length; i++) {
-  // CREAR ARRAY CON 20 EQUIPOS   //
+// CREAR ARRAY CON 20 EQUIPOS   //
   if (parti[i].status === "FINISHED") {
     let repetidoCasa = false;
     let repetidoFuera = false;

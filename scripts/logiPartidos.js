@@ -82,4 +82,7 @@ botonBuscar.addEventListener("click", function () {
     }
   }
 });
+
 /* FIN TABLA Y CONDICIONALES */
+
+
