@@ -1,4 +1,4 @@
-/*TABLA CLASIFICACIONES (partidos) */
+/*TABLA CLASIFICACIONES (*/
 let tbody = document.getElementById("tbody");
 let parti = partidos.matches;
 
@@ -13,7 +13,7 @@ for (let i = 0; i < parti.length; i++) {
     tbody.appendChild(row);
   }
 }
-/*FIN TABLA CLASIFICACIONES PARTIDOS */
+/*FIN TABLA CLASIFICACIONES  */
 
 /*FILTROS PARTIDOS */
 let inputFiltro = document.getElementById("input1");
@@ -25,10 +25,7 @@ let empate = document.getElementById("empatados");
 
 botonBuscar.addEventListener("click", function () {
   tbody.innerHTML = "";
-  /*  console.log(ganar.checked)
-    console.log(inputFiltro.value)
-    console.log(perder.checked)
-    console.log(empate.checked)*/
+  /* SELECTORES DE FILTRO (HACER QUE)*/
   for (let i = 0; i < parti.length; i++) {
     if (
       (inputFiltro.value === parti[i].homeTeam.name ||
@@ -38,7 +35,7 @@ botonBuscar.addEventListener("click", function () {
       perder.checked === false &&
       empate.checked === false
     ) {
-      // EMPIEZO A PINTAR TABLA Y CONDICIONALES  //
+      //  PINTAR TABLA Y CONDICIONALES  //
       if (parti[i].status === "FINISHED") {
         let row = document.createElement("tr");
         row.innerHTML = `<td>${parti[i].homeTeam.name}<img class="escudo" src="https://crests.football-data.org/${parti[i].homeTeam.id}.svg"/></td><td>${parti[i].score.fullTime.homeTeam} - ${parti[i].score.fullTime.awayTeam}</td><td><img class="escudo" src="https://crests.football-data.org/${parti[i].awayTeam.id}.svg"/>${parti[i].awayTeam.name}</td>`;
@@ -84,5 +81,3 @@ botonBuscar.addEventListener("click", function () {
 });
 
 /* FIN TABLA Y CONDICIONALES */
-
-
