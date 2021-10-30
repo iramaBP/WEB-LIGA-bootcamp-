@@ -17,6 +17,7 @@ fetch(url, {
   })
   .then(function (promesa2) {
     console.log(promesa2);
+    cargando.innerHTML = "";
     /* resolvemos la promesa que nos devuelve el j.son */
     let parti = promesa2.matches;
     let equipos =  []
@@ -87,5 +88,10 @@ fetch(url, {
       tbody.appendChild(fila);
     }
   })
-  .catch(function (error) {});
+  .catch(function (error) {
+    cargando.innerHTML = "";
+    cargando.innerHTML = `Ha ocurrido el siguiente error:${error}`;
+  
+  });
+ 
 
