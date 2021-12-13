@@ -2,6 +2,8 @@
 Segundo modulo de mi bootcamp de programación en el que hemos comenzado a practicar con JAVASCRIPT .
 He creado una web de "LA LIGA "  con la que he podido practicar utilizando Javascript .
 La web consta de: 3 archivos JS Y 4 archivos index HTML ( cada uno de ellos para una sección de la página ) y un solo archivo CSS que da estilo básico a todos ellos .
+
+# # Tiempo de desarrollo:
 Tiempo de duración aprox : 7 dias .
 
 # # Tecnologías:
